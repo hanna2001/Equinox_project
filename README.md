@@ -1,4 +1,4 @@
-# equinox_project
+# mayday
 
 A new Flutter application.
 
