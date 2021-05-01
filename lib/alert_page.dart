@@ -93,15 +93,19 @@ class _AlertPageState extends State<AlertPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      appBar: AppBar(
+        title: Text('MayDay'),
+      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: AvatarGlow(
         animate: _isListening,
-        glowColor: Colors.blue,
+        glowColor: Colors.grey,
         endRadius: 75,
         repeat: true,
         child: FloatingActionButton(
+          backgroundColor: Colors.grey,
           onPressed: () {
+            print(widget.keyword);
             _listen();
           },
           child: Icon(_isListening ? Icons.mic : Icons.mic_none),
