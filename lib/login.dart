@@ -1,4 +1,3 @@
-import 'package:equinox_project/alert_page.dart';
 import 'package:equinox_project/homepage.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +18,13 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('MayDay'),
+          title:  Text(
+            'Mayday',
+            style: TextStyle(
+                color: Colors.white,
+                fontSize: 30,
+            ),
+          ),
         ),
         body: Padding(
             padding: EdgeInsets.all(10),
