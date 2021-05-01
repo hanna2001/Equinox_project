@@ -58,7 +58,7 @@ class _AlertPageState extends State<AlertPage> {
                   playSound();
                   print(words[i]);
                   setState(() {
-                    displayText = words[i];
+                    displayText = 'Keyword found ' + words[i];
                     alertOn = true;
                   });
                   break;
