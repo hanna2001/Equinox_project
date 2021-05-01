@@ -1,3 +1,4 @@
+import 'package:equinox_project/alert_page.dart';
 import 'package:equinox_project/homepage.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,11 @@ class _LoginPageState extends State<LoginPage> {
             child: Text('login'),
             onPressed: () {
               Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => HomePage()));
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => AlertPage(
+                            keyword: 'hell',
+                          )));
             },
           ),
         ));
